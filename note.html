@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+
+
+    <title>Note Taking Application</title>
+    <style>
+        body {
+            font-family: 'EB Garamond', serif;
+            background: url(cover.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+
+        .heading {
+            text-align: center;
+            background-color: rgb(219, 219, 91);
+            padding: 10px;
+            font-variant: small-caps;
+            font-size: 2rem;
+        }
+
+        h2 {
+            background-color: lightgray;
+            padding: 20px;
+        }
+
+        .des {
+            border: 1px solid black;
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px
+        }
+
+        #save {
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 20px;
+            background-color: rgb(219, 219, 91);
+        }
+        button{
+            padding: 10px;
+            border-radius: 10px;
+            background-color: rgb(219, 219, 91);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2 class="heading"><i class="fas fa-file-alt" style="margin: 10px;"></i>Take Note!</h2>
+    </div>
+    <div class="jumbostron">
+        <div class="container">
+            <div>
+                <h2>Notes<button id="save" class="float-right">Save</button></h2>
+                <!-- <input class="des" id="titlenote" type="text" placeholder="Title..."> -->
+                <textarea class="des" id="notetxt" placeholder="Note..." name="" id="" cols="30" style="width:100%;"
+                    rows="8"></textarea>
+            </div>
+            <div>
+                <h2>Your Notes</h2>
+            </div>
+            <div id="notes" class="card-columns">
+            </div>
+        </div>
+    </div>
+    <script src="js/note.js"></script>
+</body>
+
+</html>
